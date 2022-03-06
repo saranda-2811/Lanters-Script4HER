@@ -38,6 +38,3 @@ Let your products meet the investors and mentors it needs for it growth.
 Find your own community using Lanterns.
 Attend the workshops to meet potential business partners, upskill yourself, get resources and increase the net worth of your business.
 
-Tech Stack : HTML5, CSS3, Ajax, React, Bootstrap, Payment GateWay API, Git, Javascript, Spring.
-
-
