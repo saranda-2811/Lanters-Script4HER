@@ -1,0 +1,266 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  /*background-image: url("images/bg11.jpg.jpg");*/
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  padding: 10px;
+  background: rgba(2, 2, 2, 0);
+  color: rgb(0, 0, 0);
+  border: none;
+  box-shadow: 12px 10px 12px rgba(76, 86, 126, 0.5);
+  border-radius: 8px;
+  font-family: "Montserrat";
+  align-self: bottom;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: hsla(120, 69%, 18%, 0.808);
+  
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(71, 45, 45);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+button:hover {
+  background-color: rgb(49, 155, 190);
+}
+
+header {
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  color: rgb(53, 39, 39);
+  text-align: center;
+  font-size: 10px;
+}
+header:before,
+header:after {
+  content: "";
+  margin: auto 1em;
+  border-bottom: solid 1px;
+
+  flex: 1;
+}
+h1 {
+  font-family: Courier, monospace;
+
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  font-size: 40px;
+  position: relative;
+  padding: 0.25em 1em;
+  overflow: hidden;
+  background: linear-gradient(currentcolor, currentcolor) no-repeat top center,
+    linear-gradient(currentcolor, currentcolor) no-repeat bottom center;
+  background-size: calc(100% - 1.65em) 0px;
+}
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+h1:before,
+h1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: solid 1px;
+  border-top: none;
+  border-bottom: none;
+  transform: skew(45deg);
+}
+h1:after {
+  transform: skew(-45deg);
+}
+
+#info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  grid-column-gap: 60px;
+  grid-row-gap: 20px;
+  filter: blur(0);
+  grid-area: 20;
+  text-align: center;
+  font-family:inherit;
+  
+}
+#info img {
+  width: 100%;
+}
+#info img:hover {
+  border-top-left-radius: 50px;
+}
+
+#info img:active {
+  -moz-transform: translate(0, -1em) rotate(10deg);
+  -o-transform: translate(0, -1em) rotate(10deg);
+  -webkit-transform: translate(0, -1em) rotate(10deg);
+}
+.img {
+  box-sizing: border-box;
+  box-shadow: 12px 10px 12px rgba(180, 142, 142, 0.5);
+}
+
+.img {
+  margin: 8px;
+  padding: 3px;
+  outline: 0px solid #ddd;
+  border: #a1a1a1;
+  float: left;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+}
+
+.img:hover {
+  border-top-left-radius: 50px;
+  cursor: pointer;
+  margin-top: 0.5px;
+  box-shadow: none;
+  background-color: rgba(238, 238, 247, 0);
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+@media screen and (max-width: 481px) {
+  header {
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    color: black;
+    text-align: center;
+    font-size: 7px;
+  }
+  header:before,
+  header:after {
+    content: "";
+    margin: auto 1em;
+    border-bottom: solid 1px;
+
+    flex: 1;
+  }
+  h1 {
+    font-family: Courier, monospace;
+
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
+    white-space: nowrap;
+    font-size: 17px;
+    position: relative;
+    padding: 0.25em 1em;
+    overflow: hidden;
+    background: linear-gradient(currentcolor, currentcolor) no-repeat top center,
+      linear-gradient(currentcolor, currentcolor) no-repeat bottom center;
+    background-size: calc(100% - 1.65em) 0px;
+  }
+  @keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+  h1:before,
+  h1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: solid 1px;
+    border-top: none;
+    border-bottom: none;
+    transform: skew(45deg);
+  }
+  h1:after {
+    transform: skew(-45deg);
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    min-height: 8vh;
+    background-color: #377c37bb;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 150%;
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+}

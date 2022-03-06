@@ -1,0 +1,223 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+      
+    height: 100%;
+    width: 100%;
+      background-color: rgb(255, 255, 255);
+      background-size: cover;
+  
+      
+   
+    background-position: center;
+    background-repeat: no-repeat;
+      /*background-color: #062764;*/
+     }
+  
+     ::-webkit-scrollbar {
+      display: none;
+  }
+  
+  nav {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #0a8286;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+   
+  .nav-links li {
+    list-style: none;
+  }
+   
+  .nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  
+  header {
+    background: rgb(255, 255, 255);
+    display: flex;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-size: 25px;
+  }
+  header:before,
+  header:after {
+    content: '';
+    margin: auto 1em;
+    border-bottom: solid 1px;
+    flex: 1;
+  }
+   h1 {
+    font-family: Courier, monospace;
+      
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+   animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+     font-size: 30px;
+    position: relative;
+    padding: 0.25em 1em;
+    overflow: hidden;
+    background: linear-gradient(currentcolor, currentcolor) no-repeat top center, linear-gradient(currentcolor, currentcolor) no-repeat bottom center;
+    background-size: calc(100% - 1.65em) 0px;
+    
+  }
+  h1:before,
+  h1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: solid 1px;
+    border-top: none;
+    border-bottom: none;
+    transform: skew(45deg)
+  }
+  h1:after {
+    transform: skew(-45deg)
+  }
+  
+  @keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+  }
+  
+  @keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+  }
+  button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    background-color: #f3f7f0;
+    font-family: "Montserrat";
+    color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+  }
+  button[type="submit"]:hover {
+    background-color:#4ccac0;
+  }
+  @media screen and (max-width: 481px) {
+    header {
+      background: rgba(255, 255, 255, 0);
+      display: flex;
+      color: black;
+      text-align: center;
+      font-size: 7px;
+    }
+    header:before,
+    header:after {
+      content: "";
+      margin: auto 1em;
+      border-bottom: solid 1px;
+   
+      flex: 1;
+    }
+    h1 {
+      font-family: Courier, monospace;
+   
+      display: inline-block;
+      overflow: hidden;
+      letter-spacing: 2px;
+      animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
+      white-space: nowrap;
+      font-size: 17px;
+      position: relative;
+      padding: 0.25em 1em;
+      overflow: hidden;
+      background: linear-gradient(currentcolor, currentcolor) no-repeat top center,
+        linear-gradient(currentcolor, currentcolor) no-repeat bottom center;
+      background-size: calc(100% - 1.65em) 0px;
+    }
+    @keyframes typing {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+   
+    @keyframes blink {
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: orange;
+      }
+    }
+    h1:before,
+    h1:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border: solid 1px;
+      border-top: none;
+      border-bottom: none;
+      transform: skew(45deg);
+    }
+    h1:after {
+      transform: skew(-45deg);
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: left;
+      min-height: 8vh;
+      background-color: #81cec6;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 150%;
+    }
+   
+    .nav-links li {
+      list-style: none;
+    }
+   
+    .nav-links a {
+      color: rgb(226, 226, 226);
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
